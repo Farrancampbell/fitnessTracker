@@ -25,8 +25,8 @@ mongoose.connect(
 );
 
 
-app.use(require("./fitnessTracker/routes/api"));
-app.use(require("./fitnessTracker/routes/view"));
+app.use(require("./Routes/api"));
+app.use(require("./Routes/view"));
 
 app.listen(PORT, () => {
   console.log(`App running on port http://localhost:${PORT}`);
